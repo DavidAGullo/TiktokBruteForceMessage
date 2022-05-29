@@ -1,7 +1,7 @@
 from time import sleep
 
-ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ "
-MESSAGE = "PASSWORD UNLOCKED"
+ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ " #Characters Allowed for the script, it will cycle through these.
+MESSAGE = "PASSWORD UNLOCKED" #The final output of the message, in Bruteforce fashion
 
 #------------------------------------------------------#
 # The Code                                             #
@@ -17,7 +17,6 @@ while(True):
         print(inSet + ALPHABET[j])
         j = j+1
     else:
-        #sleep(1)
         inSet += ALPHABET[j]
         j = 0
         i = i + 1
